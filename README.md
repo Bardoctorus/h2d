@@ -3,6 +3,13 @@
 I shamelessly ripped the code from here as a starting point:
 https://aticleworld.com/c-program-to-convert-hexadecimal-to-decimal/
 
+# The Plan
+
+To basically turn this rupped code into a super simple command line tool which does basically only two things:
+
+- Detects input numbers and shows their equivalents (b00010001 detected by leading b, 0xFF by leading 0x, decimal is regular int and octal is ??? who the fuck uses octal???)
+- Is a simple never ending game that prints a number in one format and demands it returned in another. High Scores! Leaderboards!! Feature Creep!!
+
 # Installation
 
 For now there aint none. Download it, compile it, place it in your PATH.
