@@ -8,10 +8,26 @@ int main()
     char hex[ARRAY_SIZE];
     long long decimal = 0, base = 1;
     int i = 0, value, length;
+
+    while(1)
+    {
+
+        //ripped code
     /* Get hexadecimal value from user */
     printf("Enter hexadecimal number: ");
     fflush(stdin);
     fgets(hex,ARRAY_SIZE,stdin);
+    //bit you jsut added
+
+    printf("hex is %s", hex);
+    //this doesn't work because fgets doesn't account for newlines
+    if(strcmp(hex, "q") == 0)
+    {
+        printf("I should quit here");
+        return 0;
+    }
+
+    //continue ripped code
     length = strlen(hex);
     for(i = length--; i >= 0; i--)
     {
@@ -33,5 +49,10 @@ int main()
     }
     printf("\nHexadecimal number = %s", hex);
     printf("Decimal number = %lld\n", decimal);
+
+    
+    }
+
     return 0;
+
 }
