@@ -13,6 +13,6 @@ For now it's just the program from the site above, so you enter a hex number and
 
 # TODO
 
-- Add a loop to continue the program until a quit command
-- Add octal and binary to output
-- Add input choice so you can input any one and get the conversion from any of the others.
+- Add a loop to continue the program until a quit command [ ]
+- Add octal and binary to output [ ]
+- Add input choice so you can input any one and get the conversion from any of the others. [ ]
