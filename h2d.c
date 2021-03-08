@@ -7,25 +7,30 @@ int main()
 {
     char hex[ARRAY_SIZE];
     long long decimal = 0, base = 1;
-    int i = 0, value, length;
+    int i = 0,  length;
 
     while(1)
     {
 
-        //ripped code
     /* Get hexadecimal value from user */
     printf("Enter hexadecimal number: ");
     fflush(stdin);
     fgets(hex,ARRAY_SIZE,stdin);
-    //bit you jsut added
-
-    printf("hex is %s", hex);
-    //this doesn't work because fgets doesn't account for newlines
-    if(strcmp(hex, "q") == 0)
+    //quit if q
+    if(hex[0] == 'q')
     {
-        printf("I should quit here");
+        printf("\n________\n\nQuitting\n________\n\n");
         return 0;
     }
+    //game quizz thing if g
+    if(hex[0] == 'g')
+    {
+	    //start game mode
+	    printf("\n\n________\ngame mode\n________\n\n");
+    }
+
+
+    
 
     //continue ripped code
     length = strlen(hex);
