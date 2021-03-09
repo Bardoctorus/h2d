@@ -7,7 +7,7 @@ https://aticleworld.com/c-program-to-convert-hexadecimal-to-decimal/
 
 To basically turn this rupped code into a super simple command line tool which does basically only two things:
 
-- Detects input numbers and shows their equivalents (b00010001 detected by leading b, 0xFF by leading 0x, decimal is regular int and octal is ??? who the fuck uses octal???)
+- Detects input numbers and shows their equivalents (0b00010001 detected by leading 0b, 0xFF by leading 0x, decimal is regular int and octal is ??? who the fuck uses octal???)
 - Is a simple never ending game that prints a number in one format and demands it returned in another. High Scores! Leaderboards!! Feature Creep!!
 
 # Installation

@@ -19,8 +19,8 @@ int main()
     fgets(hex,ARRAY_SIZE,stdin);
     //bit you jsut added
 
-    printf("hex is %s", hex);
     //this doesn't work because fgets doesn't account for newlines
+    printf("Comparison bool: %d", strcmp(hex, "q"));
     if(strcmp(hex, "q") == 0)
     {
         printf("I should quit here");
@@ -49,8 +49,8 @@ int main()
     }
     printf("\nHexadecimal number = %s", hex);
     printf("Decimal number = %lld\n", decimal);
-
-    
+	decimal = 0;
+   	base = 1; 
     }
 
     return 0;
