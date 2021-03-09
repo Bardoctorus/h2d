@@ -1,61 +1,42 @@
-// Ripped directly from https://aticleworld.com/c-program-to-convert-hexadecimal-to-decimal/
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <utils.h>
 #define ARRAY_SIZE  20
 int main()
 {
-    char hex[ARRAY_SIZE];
+    char input[ARRAY_SIZE];
     long long decimal = 0, base = 1;
     int i = 0,  length;
+
+    int temp = 0b11111111;
+    printf("test: %d\n\n", temp);
+    temp << 0b00000011;
+    printf("test: %d\n\n", temp);
 
     while(1)
     {
 
     printf("Enter hexadecimal number: ");
     fflush(stdin);
-    fgets(hex,ARRAY_SIZE,stdin);
-    if(strcmp(hex, "q") == 0)
+    fgets(input,ARRAY_SIZE,stdin);
+    if(strcmp(input, "q") == 0)
     //quit if q
-    if(hex[0] == 'q')
+    if(input[0] == 'q')
     {
         printf("\n________\n\nQuitting\n________\n\n");
         return 0;
     }
     //game quizz thing if g
-    if(hex[0] == 'g')
+    if(input[0] == 'g')
     {
-	    //start game mode
+	    //start game mode    
+
+
 	    printf("\n\n________\ngame mode\n________\n\n");
     }
 
-
-    
-
-    //continue ripped code
-    length = strlen(hex);
-    for(i = length--; i >= 0; i--)
-    {
-        if(hex[i] >= '0' && hex[i] <= '9')
-        {
-            decimal += (hex[i] - 48) * base;
-            base *= 16;
-        }
-        else if(hex[i] >= 'A' && hex[i] <= 'F')
-        {
-            decimal += (hex[i] - 55) * base;
-            base *= 16;
-        }
-        else if(hex[i] >= 'a' && hex[i] <= 'f')
-        {
-            decimal += (hex[i] - 87) * base;
-            base *= 16;
-        }
-    }
-    printf("\nHexadecimal number = %s", hex);
-    printf("Decimal number = %lld\n", decimal);
-	decimal = 0;
-   	base = 1; 
+    printf("Decimal equivalent %d\n\n", hex2Dec(input));
     }
 
     return 0;
